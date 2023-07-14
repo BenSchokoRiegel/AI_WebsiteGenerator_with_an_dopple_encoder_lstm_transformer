@@ -1,0 +1,9 @@
+
+
+this is a simple static html webpage (only the body).
+Add class = " " attributes to a lot of these html elements:
+Use the bootstrap grid system to allign the elements nicely.
+(like centered or next to each other)
+Also add or change the bootstrap magins and paddings to display everything as pleasing as possible.
+Use only bootstrap 4.0 classes, no style tags.
+If necessary add some html tags.

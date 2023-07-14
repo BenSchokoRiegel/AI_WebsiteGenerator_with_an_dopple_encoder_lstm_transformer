@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plains</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    #Header {
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+    #Main {
+      padding: 20px;
+    }
+    #Footer {
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+    body {
+      background-color: #f8f9fa;
+      color: #343a40;
+    }
+    .card {
+      background-color: #ffffff;
+      color: #343a40;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    .btn-primary:hover {
+      background-color: #0069d9;
+      border-color: #0062cc;
+    }
+    .form-control {
+      background-color: #ffffff;
+      color: #343a40;
+    }
+    .list-group-item {
+      background-color: #ffffff;
+      border-color: #dee2e6;
+    }
+    .form-control:focus {
+      background-color: #ffffff;
+      border-color: #80bdff;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+      color: #343a40;
+    }
+    .form-control::placeholder {
+      color: #6c757d;
+      opacity: 1;
+    }
+    .form-select {
+      background-color: #ffffff;
+      color: #343a40;
+    }
+    .form-select:focus {
+      background-color: #ffffff;
+      border-color: #80bdff;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+      color: #343a40;
+    }
+    .form-select::placeholder {
+      color: #6c757d;
+      opacity: 1;
+    }
+    .form-select:focus::placeholder {
+      color: #6c757d;
+      opacity: 1;
+    }
+    .form-select option {
+      background-color: #ffffff;
+      color: #343a40;
+    }
+  </style>
+</head>
+<body>
+  <header id="Header" class="container">
+    <div class="row">
+      <div class="col-12">
+        <img id="Logo" src="logo.png" alt="" class="img-fluid">
+        <nav id="Navigation">
+          <a id="LinkHOME" href="#" class="btn btn-primary">HOME</a>
+          <a id="LinkFacts" href="/facts/" class="btn btn-primary">Facts</a>
+          <a id="LinkWildlife" href="/wildlife/" class="btn btn-primary">Wildlife</a>
+          <a id="LinkConservation" href="/conservation/" class="btn btn-primary">Conservation</a>
+          <a id="LinkGallery" href="/gallery/" class="btn btn-primary">Gallery</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main id="Main" class="container">
+    <section id="Section1">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body bg-light">
+              <h5 class="card-title">Discover the Beauty of Plains</h5>
+              <p class="card-text">
+                Explore the vast open landscapes and rich biodiversity
+              </p>
+              <img id="Image" src="plains.jpg" alt="Plains Image" class="img-fluid">
+              <p class="card-text">
+                <a id="Link" href="instagram.com/plains" rel="bla" class="btn btn-primary">Follow us on Instagram</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body bg-light">
+              <h5 class="card-title">Plains Highlights</h5>
+              <ul id="List" class="list-group">
+                <li id="ListItem1" class="list-group-item">Grasslands</li>
+                <li id="ListItem2" class="list-group-item">Wildlife</li>
+                <li id="ListItem3" class="list-group-item">Natural Wonders</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body bg-light">
+              <h5 class="card-title">Contact Us</h5>
+              <form id="Form" action="submit.php" method="POST">
+                <div class="form-group">
+                  <input id="InputName" type="text" name="name" placeholder="name" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input id="InputEmail" type="email" name="email" placeholder="email" class="form-control">
+                </div>
+                <button id="SubmitButton" type="submit" value="Submit" class="btn btn-primary">Submit</button>
+                <div class="form-group">
+                  <select id="Select" name="dropdown" class="form-select">
+                    <option id="Option1" value="option1">Option 1</option>
+                    <option id="Option2" value="option2">Option 2</option>
+                    <option id="Option3" value="option3">Option 3</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="Footer" class="container">
+    <div class="row">
+      <div class="col-12">
+        <select class="form-select">
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

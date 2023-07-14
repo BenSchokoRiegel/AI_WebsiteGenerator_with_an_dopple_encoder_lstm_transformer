@@ -1,0 +1,89 @@
+@startuml 
+
+
+object Body
+
+object Header
+
+object Logo {
++ href = "logo.png"
+}
+
+object Navigation
+
+object Main
+
+object Section1
+
+object Paragraph1{
+- Welcome to the Random Topic Website!
+}
+
+object Paragraph2{
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus, lacus vitae suscipit ultricies, tellus lacus auctor purus, in aliquet libero tellus eget lectus. Cras ut est quis mauris iaculis fringilla. Aliquam ut nisl id velit sagittis bibendum. Nam at vehicula odio. Curabitur eleifend ultricies consequat. In rutrum turpis a mauris aliquet, at pellentesque ligula consequat. Curabitur semper, nisi nec scelerisque dapibus, mauris mauris bibendum justo, et pharetra dolor nisl vitae erat. Nam vel magna efficitur, mattis lacus at, rutrum mauris. Nulla facilisi.
+}
+
+object Image {
++ href = "image.jpg"
++ alt = "Random Image"
+- Image Caption
+}
+
+object Link {
++ href = "https://example.com"
+- Visit Example Website
+}
+
+object List
+
+object ListItem1{
+- Item 1
+}
+
+object ListItem2{
+- Item 2
+}
+
+object ListItem3{
+- Item 3
+}
+
+object Footer
+
+'SPLIT
+
+Body : <body>
+Header : <header>
+Main : <main>
+Paragraph1 : <p>
+Paragraph2 : <p>
+Footer : <footer>
+ListItem1 : <li>
+ListItem2 : <li>
+ListItem3 : <li>
+List : <ul>
+Navigation : <nav>
+Section1 : <section>
+Link : <a>
+Logo : <img>
+Image : <img>
+
+'SPLIT
+
+Body --> Header
+Header --> Logo
+Header --> Navigation
+Body --> Main
+Main --> Section1
+Section1 --> Paragraph1
+Section1 --> Paragraph2
+Paragraph1 --> Image
+Paragraph2 --> Link
+Paragraph2 --> List
+List --> ListItem1
+List --> ListItem2
+List --> ListItem3
+Body --> Footer
+
+ 
+@enduml

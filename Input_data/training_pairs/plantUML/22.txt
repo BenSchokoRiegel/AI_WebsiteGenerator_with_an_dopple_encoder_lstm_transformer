@@ -1,0 +1,171 @@
+@startuml
+
+object Body
+object Header
+object Logo {
++ href="logo.png"
+}
+object Navigation
+object Main
+object Section1
+object Paragraph1 {
+- Lorem ipsum dolor sit amet
+}
+object Paragraph2 {
+- Consectetur adipiscing elit
+}
+object Image {
++ href="picture.jpg"
++ alt="A random picture"
++ width=300
+}
+object Link {
++ href="http://www.google.com"
++ target="_blank"
+- Google
+}
+object Form {
++ action="submit.php"
++ method="POST"
+}
+object InputName {
++ type="text"
++ name="name"
++ placeholder="Name"
+}
+object InputEmail {
++ type="email"
++ name="email"
++ placeholder="Email"
+}
+object RadioBtn1 {
++ type="radio"
++ name="radioBtn"
++ value="1"
+}
+object RadioBtn2 {
++ type="radio"
++ name="radioBtn"
++ value="2"
+}
+object RadioBtn3 {
++ type="radio"
++ name="radioBtn"
++ value="3"
+}
+object Checkbox1 {
++ type="checkbox"
++ name="checkbox1"
++ value="Option 1"
+}
+object Checkbox2 {
++ type="checkbox"
++ name="checkbox2"
++ value="Option 2"
+}
+object SubmitButton {
++ type="submit"
++ value="Submit"
+- Submit
+}
+object Select {
++ name="dropdown"
+}
+object Option1 {
++ value="option1"
+- Option 1
+}
+object Option2 {
++ value="option2"
+- Option 2
+}
+object Option3 {
++ value="option3"
+- Option 3
+}
+object LinkHOME {
++ href="#"
+- Home
+}
+object LinkHTML {
++ href="/html/"
+- HTML
+}
+object LinkCSS {
++ href="/css/"
+- CSS
+}
+object LinkJS {
++ href="/js/"
+- JavaScript
+}
+object LinkPython {
++ href="/python/"
+- Python
+}
+object Footer
+
+'SPLIT
+
+Body : <body>
+Header : <header>
+Logo : <img>
+Navigation : <nav>
+Main : <main>
+Section1 : <section>
+Paragraph1 : <p>
+Paragraph2 : <p>
+Image : <img>
+Link : <a>
+Form : <form>
+InputName : <input>
+InputEmail : <input>
+RadioBtn1 : <input>
+RadioBtn2 : <input>
+RadioBtn3 : <input>
+Checkbox1 : <input>
+Checkbox2 : <input>
+SubmitButton : <button>
+Select : <select>
+Option1 : <option>
+Option2 : <option>
+Option3 : <option>
+LinkHOME : <a>
+LinkHTML : <a>
+LinkCSS : <a>
+LinkJS : <a>
+LinkPython : <a>
+Footer : <footer>
+
+'SPLIT
+
+Body --> Header
+Header --> Logo
+Header --> Navigation
+Body --> Main
+Main --> Section1
+Section1 --> Paragraph1
+Section1 --> Paragraph2
+Section1 --> Image
+Paragraph2 --> Link
+Paragraph1 --> Form
+Form --> InputName
+Form --> InputEmail
+Form --> RadioBtn1
+Form --> RadioBtn2
+Form --> RadioBtn3
+Form --> Checkbox1
+Form --> Checkbox2
+Form --> Select
+Select --> Option1
+Select --> Option2
+Select --> Option3
+Form --> SubmitButton
+Navigation --> LinkHOME
+Navigation --> LinkHTML
+Navigation --> LinkCSS
+Navigation --> LinkJS
+Navigation --> LinkPython
+Body --> Footer
+
+@enduml

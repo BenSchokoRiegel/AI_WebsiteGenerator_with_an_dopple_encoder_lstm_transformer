@@ -1,0 +1,208 @@
+@startuml
+
+object Body
+object Header
+object Logo {
++ href = "logo.png"
+}
+object Navigation
+object Main
+object Section1
+object Section2
+object Paragraph1 {
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod mauris non ante volutpat, eu egestas eros vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec tempor metus ut purus euismod, in placerat nunc accumsan.
+}
+object Paragraph2 {
+- Nullam euismod turpis vel velit bibendum, non lacinia sapien lobortis. In hac habitasse platea dictumst. Sed id elit id est maximus consectetur.
+}
+object Paragraph3 {
+- Fusce pellentesque quam lorem, eu facilisis metus tempus sed. Nullam efficitur auctor nisl, eu sodales urna interdum id.
+}
+object Paragraph4 {
+- Sed auctor ligula vel sapien eleifend, vel dignissim sapien tincidunt. Curabitur porttitor mauris ac nulla tincidunt, sed consectetur enim auctor.
+}
+object Image1 {
++ href = "img1.jpg"
++ alt = "Image 1"
+}
+object Image2 {
++ href = "img2.jpg"
++ alt = "Image 2"
+}
+object Image3 {
++ href = "img3.jpg"
++ alt = "Image 3"
+}
+object Link1 {
++ href = "https://www.google.com"
++ rel = "nofollow noopener"
+- Google
+}
+object Link2 {
++ href = "https://www.wikipedia.org"
++ rel = "nofollow noopener"
+- Wikipedia
+}
+object Link3 {
++ href = "https://www.youtube.com"
++ rel = "nofollow noopener"
+- YouTube
+}
+object List1
+object ListItem1 {
+- Item 1
+}
+object ListItem2 {
+- Item 2
+}
+object ListItem3 {
+- Item 3
+}
+object ListItem4 {
+- Item 4
+}
+object ListItem5 {
+- Item 5
+}
+object ListItem6 {
+- Item 6
+}
+object RadioButtons
+object RadioButton1 {
++ type = "radio"
++ name = "radioGroup"
++ value = "option1"
+- Option 1
+}
+object RadioButton2 {
++ type = "radio"
++ name = "radioGroup"
++ value = "option2"
+- Option 2
+}
+object RadioButton3 {
++ type = "radio"
++ name = "radioGroup"
++ value = "option3"
+- Option 3
+}
+object Form {
++ action = "submit.php"
++ method = "POST"
+}
+object InputName {
++ type = "text"
++ name = "name"
++ placeholder = "Name"
+}
+object InputEmail {
++ type = "email"
++ name = "email"
++ placeholder = "Email"
+}
+object SubmitButton {
++ type = "submit"
++ value = "Submit"
+- Submit
+}
+object Select {
++ name = "dropdown"
+}
+object Option1 {
++ value = "option1"
+- Option 1
+}
+object Option2 {
++ value = "option2"
+- Option 2
+}
+object Option3 {
++ value = "option3"
+- Option 3
+}
+object LinkHome {
++ href = "#"
+- Home
+}
+object LinkAbout {
++ href = "/about"
+- About
+}
+object LinkContact {
++ href = "/contact"
+- Contact
+}
+object Footer
+
+'SPLIT
+
+Body : <body>
+Header : <header>
+Logo : <img>
+Navigation : <nav>
+Main : <main>
+Section1 : <section>
+Paragraph1 : <p>
+Paragraph2 : <p>
+Paragraph3 : <p>
+Paragraph4 : <p>
+Image1 : <img>
+Image2 : <img>
+Image3 : <img>
+Link1 : <a>
+Link2 : <a>
+Link3 : <a>
+List1 : <ul>
+RadioButtons : <form>
+Form : <form>
+InputName : <input>
+InputEmail : <input>
+SubmitButton : <button>
+Select : <select>
+Option1 : <option>
+Option2 : <option>
+Option3 : <option>
+LinkHome : <a>
+LinkAbout : <a>
+LinkContact : <a>
+Footer : <footer>
+
+'SPLIT
+
+Body --> Header
+Header --> Logo
+Header --> Navigation
+Body --> Main
+Main --> Section1
+Section1 --> Paragraph1
+Section1 --> Paragraph2
+Section1 --> Paragraph3
+Section1 --> Paragraph4
+Section1 --> Image1
+Section1 --> Image2
+Section1 --> Image3
+Main --> Link1
+Main --> Link2
+Main --> Link3
+Main --> List1
+List1 --> ListItem1
+List1 --> ListItem2
+List1 --> ListItem3
+List1 --> ListItem4
+List1 --> ListItem5
+List1 --> ListItem6
+Main --> RadioButtons
+RadioButtons --> Form
+Form --> InputName
+Form --> InputEmail
+Form --> SubmitButton
+Form --> Select
+Select --> Option1
+Select --> Option2
+Select --> Option3
+Navigation --> LinkHome
+Navigation --> LinkAbout
+Navigation --> LinkContact
+Body --> Footer
+
+@enduml

@@ -1,0 +1,165 @@
+
+object Body
+object Header
+object Logo {
++ href = "logo.png"
+}
+object Navigation
+object Main
+object Section1
+object Paragraph1 {
+- Quantum Mechanics: Unlocking the Secrets of the Subatomic World
+}
+object Paragraph2 {
+- Quantum mechanics is a branch of physics that describes the behavior of particles at the smallest scales. It is a mind-bending field that challenges our intuitions and has revolutionized our understanding of the universe. Let's dive into the strange and wonderful world of quantum mechanics!
+}
+object Image {
++ href = "quantum.gif"
++ alt = "Quantum mechanics illustration"
+}
+object Link {
++ href = "youtube.com/quantum"
++ rel = "bla"
+- Link to Video
+}
+object List
+object ListItem1 {
+- Wave-particle duality
+}
+object ListItem2 {
+- Superposition and entanglement
+}
+object ListItem3 {
+- Quantum teleportation
+}
+object Form {
++ action = "submit.php"
++ method = "POST"
+}
+object InputName {
++ type = "text"
++ name = "name"
++ placeholder = "Your Name"
+}
+object InputEmail {
++ type = "email"
++ name = "email"
++ placeholder = "Your Email"
+}
+object SubmitButton {
++ type = "submit"
++ value = "Submit"
+- Submit
+}
+object Select {
++ name = "dropdown"
+}
+object Option1 {
++ value = "option1"
+- Option 1
+}
+object Option2 {
++ value = "option2"
+- Option 2
+}
+object Option3 {
++ value = "option3"
+- Option 3
+}
+object Radio1 {
++ name = "radio"
+- Radio 1
+}
+object Radio2 {
++ name = "radio"
+- Radio 2
+}
+object Radio3 {
++ name = "radio"
+- Radio 3
+}
+object LinkHOME {
++ href = "#"
+- HOME
+}
+object LinkHTML {
++ href = "/html/"
+- HTML
+}
+object LinkCSS {
++ href = "/css/"
+- CSS
+}
+object LinkJS {
++ href = "/js/"
+- JavaScript
+}
+object LinkPython {
++ href = "/python/"
+- Python
+}
+object Footer
+
+'SPLIT
+
+Body : <body>
+Header : <header>
+Main : <main>
+Paragraph1 : <p>
+Paragraph2 : <p>
+Footer : <footer>
+ListItem1 : <li>
+ListItem2 : <li>
+ListItem3 : <li>
+List : <ul>
+Navigation : <nav>
+Section1 : <section>
+Link : <link>
+Form : <form>
+Logo : <img>
+Image : <img>
+SubmitButton : <button>
+InputName : <input>
+InputEmail : <input>
+Select : <select>
+Option1 : <option>
+Option2 : <option>
+Option3 : <option>
+Radio1 : <input type="radio">
+Radio2 : <input type="radio">
+Radio3 : <input type="radio">
+LinkHOME : <a href="#">
+LinkHTML : <a href="/html/">
+LinkPython : <a href="/python/">
+LinkJS : <a href="/js/">
+LinkCSS : <a href="/css/">
+
+'SPLIT
+
+Body --> Header
+Header --> Logo
+Header --> Navigation
+Body --> Main
+Main --> Section1
+Section1 --> Paragraph1
+Section1 --> Paragraph2
+Paragraph1 --> Image
+Paragraph2 --> Link
+Paragraph1 --> List
+List --> ListItem1
+List --> ListItem2
+List --> ListItem3
+Paragraph2 --> Form
+Form --> InputName
+Form --> InputEmail
+Form --> SubmitButton
+Body --> Footer
+Footer --> Select
+Select --> Option1
+Select --> Option2
+Select --> Option3
+Navigation --> LinkHOME
+Navigation --> LinkHTML
+Navigation --> LinkCSS
+Navigation --> LinkJS
+Navigation --> LinkPython

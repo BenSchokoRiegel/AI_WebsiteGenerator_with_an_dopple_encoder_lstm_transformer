@@ -1,0 +1,74 @@
+<body>
+  <header id="Header" class="container bg-light">
+    <img id="Logo" class="card-img-top" src="logo.png">
+    <nav id="Navigation" class="navbar navbar-expand-lg navbar-light bg-light">
+      <a id="LinkHOME" class="nav-link text-primary" href="#">Home</a>
+      <a id="LinkHTML" class="nav-link text-primary" href="/html/">HTML</a>
+      <a id="LinkCSS" class="nav-link text-primary" href="/css/">CSS</a>
+      <a id="LinkJS" class="nav-link text-primary" href="/js/">JavaScript</a>
+      <a id="LinkPython" class="nav-link text-primary" href="/python/">Python</a>
+    </nav>
+  </header>
+
+  <main id="Main" class="container bg-light">
+    <section id="Section1" class="row">
+      <div class="card col-md-6 bg-light">
+        <div class="card-body">
+          <p id="Paragraph1" class="card-text text-dark">Lorem ipsum dolor sit amet</p>
+          <p id="Paragraph2" class="card-text text-dark">
+            Consectetur adipiscing elit
+            <a id="Link" href="http://www.google.com" target="_blank" class="btn btn-primary">Google</a>
+          </p>
+        </div>
+      </div>
+      <div class="card col-md-6">
+        <img id="Image" class="card-img-top" src="picture.jpg" alt="A random picture" width="300">
+        <div class="card-body">
+          <form id="Form" action="submit.php" method="POST">
+            <div class="form-group">
+              <input id="InputName" type="text" name="name" placeholder="Name" class="form-control">
+            </div>
+            <div class="form-group">
+              <input id="InputEmail" type="email" name="email" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-check">
+              <input id="RadioBtn1" type="radio" name="radioBtn" value="1" class="form-check-input">
+              <label class="form-check-label text-dark" for="RadioBtn1">Option 1</label>
+            </div>
+            <div class="form-check">
+              <input id="RadioBtn2" type="radio" name="radioBtn" value="2" class="form-check-input">
+              <label class="form-check-label text-dark" for="RadioBtn2">Option 2</label>
+            </div>
+            <div class="form-check">
+              <input id="RadioBtn3" type="radio" name="radioBtn" value="3" class="form-check-input">
+              <label class="form-check-label text-dark" for="RadioBtn3">Option 3</label>
+            </div>
+            <div class="form-check">
+              <input id="Checkbox1" type="checkbox" name="checkbox1" value="Option 1" class="form-check-input">
+              <label class="form-check-label text-dark" for="Checkbox1">Checkbox 1</label>
+            </div>
+            <div class="form-check">
+              <input id="Checkbox2" type="checkbox" name="checkbox2" value="Option 2" class="form-check-input">
+              <label class="form-check-label text-dark" for="Checkbox2">Checkbox 2</label>
+            </div>
+            <div class="form-group">
+              <select id="Select" name="dropdown" class="form-control">
+                <option id="Option1" value="option1">Option 1</option>
+                <option id="Option2" value="option2">Option 2</option>
+                <option id="Option3" value="option3">Option 3</option>
+              </select>
+            </div>
+            <button id="SubmitButton" type="submit" value="Submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="Footer" class="container bg-light"></footer>
+
+  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>

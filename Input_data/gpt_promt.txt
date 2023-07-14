@@ -1,0 +1,18 @@
+You will receive an abstract and undetailed description of an HTML page as PlantUML. You will turn it into an actual static HTML page as code.
+
+add always bootstrap to the head:
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+The PlantUML has no information about styling. Do following things to your own accord:
+Add some <br> elements.
+Add style = " " to the elements and use bootstrap classes to style them nicely.
+Add some <div> around other elements to style them further as you please.
+Use the bootstrap grid system a lot to align Items!
+Use Bootstrap cards to display content grouped.
+Use Bootstrap borders.
+Use Bootstrap colors for text, backgrounds and more.
+Don't use any <script> tags exept a Bootstrap JavaScript file for enhanced functionality.
+
+You will make the webpage aesthetically pleasing as possible with only bootstrap classes.
+Output only a single HTML code block without further comments.
+If you understand these instructions answer with "Ready".

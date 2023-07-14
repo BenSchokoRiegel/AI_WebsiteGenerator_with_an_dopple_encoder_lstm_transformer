@@ -1,0 +1,56 @@
+Here's another random HTML list that represents a webpage:
+
+- html
+  - head
+    - title: My Portfolio
+    - link(rel="stylesheet", href="styles.css")
+  - body
+    - header
+      - h1: Jane Doe
+      - nav
+        - ul
+          - li
+            - a(href="#home"): Home
+          - li
+            - a(href="#about"): About
+          - li
+            - a(href="#services"): Services
+          - li
+            - a(href="#portfolio"): Portfolio
+          - li
+            - a(href="#contact"): Contact
+    - main
+      - section(id="about")
+        - h2: About Me
+        - p: Hi, I'm Jane Doe, a freelance web developer based in New York City.
+        - p: I specialize in developing dynamic and responsive websites for small businesses and individuals.
+      - section(id="services")
+        - h2: Services
+        - ul
+          - li: Web development
+          - li: Responsive design
+          - li: E-commerce solutions
+          - li: Website maintenance
+      - section(id="portfolio")
+        - h2: Portfolio
+        - ul
+          - li
+            - img(src="project1.jpg", alt="Project 1")
+            - h3: Project 1
+            - p: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          - li
+            - img(src="project2.jpg", alt="Project 2")
+            - h3: Project 2
+            - p: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      - section(id="contact")
+        - h2: Contact Me
+        - form(action="submit.php", method="POST")
+          - label(for="name"): Name:
+          - input(type="text", name="name")
+          - label(for="email"): Email:
+          - input(type="email", name="email")
+          - label(for="message"): Message:
+          - textarea(name="message")
+          - input(type="submit", value="Submit")
+    - footer
+      - p: © 2023 Jane Doe. All rights reserved.

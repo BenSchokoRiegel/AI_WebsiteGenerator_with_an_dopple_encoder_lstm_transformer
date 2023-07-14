@@ -1,0 +1,61 @@
+<body>
+    <header id="Header" class="text-center bg-primary">
+        <div class="container">
+            <img src="logo.png" alt="Logo" id="Logo" class="mx-auto">
+            <nav id="Navigation" class="mt-3">
+                <a href="#" id="LinkHOME" class="btn btn-primary">HOME</a>
+                <a href="/facts/" id="LinkFacts" class="btn btn-primary">Facts</a>
+                <a href="/species/" id="LinkSpecies" class="btn btn-primary">Species</a>
+                <a href="/conservation/" id="LinkConservation" class="btn btn-primary">Conservation</a>
+                <a href="/gallery/" id="LinkGallery" class="btn btn-primary">Gallery</a>
+            </nav>
+        </div>
+    </header>
+    <main id="Main">
+        <section id="Section1" class="text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">Explore the World of Sharks</h2>
+                                <p class="card-text text-primary">Discover the fascinating facts and species</p>
+                                <img src="shark.jpg" alt="Shark Image" class="card-img-top" id="Image">
+                                <a href="facebook.com/sharks" rel="bla" class="btn btn-primary" id="Link">Like us on Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <ul class="list-group bg-light" id="List">
+                                    <li class="list-group-item">Great White Shark</li>
+                                    <li class="list-group-item">Tiger Shark</li>
+                                    <li class="list-group-item">Hammerhead Shark</li>
+                                </ul>
+                                <form action="submit.php" method="POST" id="Form">
+                                    <div class="form-group">
+                                        <input type="text" name="name" placeholder="name" class="form-control bg-light" id="InputName">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" placeholder="email" class="form-control bg-light" id="InputEmail">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" id="SubmitButton">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="Footer" class="text-center mt-3 bg-primary">
+        <div class="container">
+            <select class="form-control text-warning" id="Select">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+        </div>
+    </footer>
+</body>

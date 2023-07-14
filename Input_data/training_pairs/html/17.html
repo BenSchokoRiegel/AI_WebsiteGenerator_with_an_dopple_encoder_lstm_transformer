@@ -1,0 +1,97 @@
+<body>
+    <header id="Header" class="container text-center bg-light">
+        <div class="row">
+            <div class="col">
+                <img id="Logo" src="logo.png" alt="Logo">
+            </div>
+        </div>
+        <nav id="Navigation" class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a id="LinkHome" class="navbar-brand" href="#">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a id="LinkAbout" class="nav-link text-warning" href="/about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="LinkContact" class="nav-link text-danger" href="/contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="LinkBlog" class="nav-link text-primary" href="/blog">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="Main">
+        <section id="Section1" class="container">
+            <div class="card">
+                <div class="card-body">
+                    <p id="Paragraph1" class="card-text text-dark"></p>
+                    <img id="Image" src="random.gif" alt="Random Image" class="card-img-top">
+                    <section id="Section2">
+                        <p id="Paragraph2" class="card-text text-dark"></p>
+                        <form id="Form" action="submit.php" method="POST">
+                            <div class="form-group row">
+                                <div class="col">
+                                    <input id="InputName" type="text" name="name" placeholder="Name"
+                                        class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <input id="InputEmail" type="email" name="email" placeholder="Email"
+                                        class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input id="InputRadio1" type="radio" name="radio" value="option1"
+                                            class="form-check-input">
+                                        <label class="form-check-label text-primary">Option 1</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="InputRadio2" type="radio" name="radio" value="option2"
+                                            class="form-check-input">
+                                        <label class="form-check-label text-primary">Option 2</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input id="InputCheckbox" type="checkbox" name="checkbox" value="checked"
+                                            class="form-check-input">
+                                        <label class="form-check-label text-primary">Checkbox</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <select id="Select" name="dropdown" class="form-control">
+                                        <option id="Option1" value="option1" class="text-primary">Option 1</option>
+                                        <option id="Option2" value="option2" class="text-primary">Option 2</option>
+                                        <option id="Option3" value="option3" class="text-primary">Option 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <button id="SubmitButton" type="submit" value="Submit"
+                                        class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="Footer"></footer>
+</body>

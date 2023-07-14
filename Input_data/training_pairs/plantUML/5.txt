@@ -1,0 +1,181 @@
+@startuml
+
+object Body
+
+object Header
+
+object Logo {
++ href = "logo.png"
+}
+
+object Navigation
+
+object Main
+
+object Section1
+
+object Paragraph1{
+- Dive into the World of Submarines
+}
+
+object Paragraph2{
+- Explore the fascinating underwater technology and missions
+}
+
+object Image {
++ href = "submarine.jpg"
++ alt = "Submarine Image"
+- Into the Depths
+}
+
+object Link {
++ href = "twitter.com/submarines"
++ rel =  "bla"
+- Follow us on Twitter
+}
+
+object List
+
+object ListItem1{
+- Submarine Types
+}
+
+object ListItem2{
+- Sonar Systems
+}
+
+object ListItem3{
+- Underwater Missions
+}
+
+object Form {
++ action = "submit.php"
++ method = "POST"
+}
+
+object InputName {
++ type = "text"
++ name = "name"
++ placeholder = "name"
+}
+
+object InputEmail {
++ type = "email"
++ name = "email"
++ placeholder = "email"
+}
+
+object SubmitButton {
++ type = "submit"
++ value = "Submit"
+- Submit
+}
+
+object Select {
++ name = "dropdown"
+}
+
+object Option1 {
++ value = "option1"
+- Option 1
+}
+
+object Option2 {
++ value = "option2"
+- Option 2
+}
+
+object Option3 {
++ value = "option3"
+- Option 3
+}
+
+object LinkHOME {
++ href = "#"
+- HOME
+}
+
+object LinkTypes {
++ href = "/types/"
+- Types
+}
+
+object LinkTechnology {
++ href = "/technology/"
+- Technology
+}
+
+object LinkMissions {
++ href = "/missions/"
+- Missions
+}
+
+object LinkHistory {
++ href = "/history/"
+- History
+}
+
+object Footer
+
+'SPLIT
+
+Body : <body>
+Header : <header>
+Main : <main>
+Paragraph1 : <p>
+Paragraph2 : <p>
+Footer : <footer>
+ListItem1 : <li>
+ListItem2 : <li>
+ListItem3 : <li>
+List : <ul>
+Navigation : <nav>
+Section1 : <section>
+Link : <link>
+Form : <form>
+Logo : <img>
+Image : <img>
+SubmitButton : <Button>
+InputName : <input>
+InputEmail : <input>
+Select : <select>
+Option1 : <options>
+Option2 : <options>
+Option3 : <options>
+LinkHOME : <link>
+LinkTypes : <link>
+LinkTechnology : <link>
+LinkMissions : <link>
+LinkHistory : <link>
+
+'SPLIT
+
+Body --> Header
+Header --> Logo
+Header --> Navigation
+Body --> Main
+Main --> Section1
+Section1 --> Paragraph1
+Section1 --> Paragraph2
+Paragraph1 --> Image
+Paragraph2 --> Link
+Paragraph1 --> List
+List --> ListItem1
+List --> ListItem2
+List --> ListItem3
+Paragraph2 --> Form
+Form --> InputName
+Form --> InputEmail
+Form --> SubmitButton
+Body --> Footer
+Footer --> Select
+Select --> Option1
+Select --> Option2
+Select --> Option3
+Navigation --> LinkHOME
+Navigation --> LinkTypes
+Navigation --> LinkTechnology
+Navigation --> LinkMissions
+Navigation --> LinkHistory
+
+@enduml

@@ -1,0 +1,163 @@
+@startuml
+object Body
+object Header
+object Logo {
++ href = "random_topic_logo.png"
+}
+object Navigation
+object Main
+object Section1
+object Paragraph1{
+- Lorem ipsum dolor sit amet
+}
+object Paragraph2{
+- Consectetur adipiscing elit
+}
+object Paragraph3{
+- Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+}
+object Image1 {
++ href = "random_topic_image1.jpg"
++ alt = "Random Image 1"
+}
+object Image2 {
++ href = "random_topic_image2.png"
++ alt = "Random Image 2"
+}
+object Link1 {
++ href = "https://www.example.com/page1"
++ rel = "nofollow"
++ target = "_blank"
+- Page 1
+}
+object Link2 {
++ href = "https://www.example.com/page2"
++ rel = "nofollow"
++ target = "_blank"
+- Page 2
+}
+object Link3 {
++ href = "https://www.example.com/page3"
++ rel = "nofollow"
++ target = "_blank"
+- Page 3
+}
+object List1
+object ListItem1{
+- Item 1
+}
+object ListItem2{
+- Item 2
+}
+object ListItem3{
+- Item 3
+}
+object Form {
++ action = "submit.php"
++ method = "POST"
+}
+object InputName {
++ type = "text"
++ name = "name"
++ placeholder = "Name"
+}
+object InputEmail {
++ type = "email"
++ name = "email"
++ placeholder = "Email"
+}
+object SubmitButton {
++ type = "submit"
++ value = "Submit"
+- Submit
+}
+object RadioButtons
+object RadioButton1 {
++ name = "radio_buttons"
++ value = "option1"
+- Option 1
+}
+object RadioButton2 {
++ name = "radio_buttons"
++ value = "option2"
+- Option 2
+}
+object RadioButton3 {
++ name = "radio_buttons"
++ value = "option3"
+- Option 3
+}
+object LinkHome {
++ href = "#"
+- Home
+}
+object LinkAbout {
++ href = "/about.html"
+- About
+}
+object LinkContact {
++ href = "/contact.html"
+- Contact
+}
+object Footer
+
+'SPLIT
+
+Body : <body>
+Header : <header>
+Main : <main>
+Section1 : <section>
+Paragraph1 : <p>
+Paragraph2 : <p>
+Paragraph3 : <p>
+Image1 : <img>
+List1 : <ul>
+Form : <form>
+RadioButtons : <fieldset>
+LinkHome : <a>
+LinkAbout : <a>
+LinkContact : <a>
+Footer : <footer>
+RadioButton1 : <input>
+RadioButton2 : <input>
+RadioButton3 : <input>
+InputName : <input>
+InputEmail : <input>
+SubmitButton : <button>
+ListItem1 : <li>
+ListItem2 : <li>
+ListItem3 : <li>
+Link1 : <a>
+Link2 : <a>
+Link3 : <a>
+
+'SPLIT
+
+Body --> Header
+Header --> Logo
+Header --> Navigation
+Body --> Main
+Main --> Section1
+Section1 --> Paragraph1
+Section1 --> Paragraph2
+Section1 --> Paragraph3
+Main --> Image1
+Main --> List1
+List1 --> ListItem1
+List1 --> ListItem2
+List1 --> ListItem3
+Main --> Form
+Form --> InputName
+Form --> InputEmail
+Form --> RadioButtons
+Form --> SubmitButton
+RadioButtons --> RadioButton1
+RadioButtons --> RadioButton2
+RadioButtons --> RadioButton3
+Navigation --> LinkHome
+Navigation --> LinkAbout
+Navigation --> LinkContact
+Footer --> Link1
+Footer --> Link2
+Footer --> Link3
+@enduml

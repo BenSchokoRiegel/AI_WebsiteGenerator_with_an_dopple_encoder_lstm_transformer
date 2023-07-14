@@ -1,0 +1,11 @@
+
+
+this is a simple html body.
+Add class = " " attributes to a lot of these html elements:
+
+Use the bootstrap grid system to allign the elements nicely.
+Also use bootstrap cards to display the html content nicely.
+Also use the bootstrap magins and paddings to display everything as pleasing as possible.
+
+If necessary add some html tags.
+Please respond only with the html code and no further comments.

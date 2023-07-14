@@ -1,0 +1,85 @@
+<body>
+    <header class="container bg-primary">
+        <div class="row">
+            <div class="col">
+                <img src="random_topic_logo.png" alt="Logo" id="Logo" class="img-fluid">
+            </div>
+            <div class="col">
+                <nav class="nav justify-content-end">
+                    <a href="#" id="LinkHome" class="nav-link text-light">Home</a>
+                    <a href="/about.html" id="LinkAbout" class="nav-link text-light">About</a>
+                    <a href="/contact.html" id="LinkContact" class="nav-link text-light">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="Section1" class="container bg-light">
+            <div class="row">
+                <div class="col">
+                    <p id="Paragraph1" class="card-text text-primary">Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="col">
+                    <p id="Paragraph2" class="card-text text-danger">Consectetur adipiscing elit</p>
+                </div>
+                <div class="col">
+                    <p id="Paragraph3" class="card-text text-success">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+            </div>
+        </section>
+        <div class="container bg-light">
+            <div class="row">
+                <div class="col">
+                    <img src="random_topic_image1.jpg" alt="Random Image 1" id="Image1" class="card-img-top img-fluid">
+                </div>
+                <div class="col">
+                    <ul id="List1" class="list-group">
+                        <li id="ListItem1" class="list-group-item bg-warning">Item 1</li>
+                        <li id="ListItem2" class="list-group-item bg-danger">Item 2</li>
+                        <li id="ListItem3" class="list-group-item bg-info">Item 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container bg-light">
+            <form action="submit.php" method="POST" id="Form" class="card">
+                <div class="card-body">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Name" id="InputName" class="form-control bg-warning">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" id="InputEmail" class="form-control bg-danger">
+                    </div>
+                    <fieldset id="RadioButtons" class="form-group">
+                        <div class="form-check">
+                            <input type="radio" name="radio_buttons" value="option1" id="RadioButton1" class="form-check-input bg-success">
+                            <label for="RadioButton1" class="form-check-label text-light">Option 1</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="radio_buttons" value="option2" id="RadioButton2" class="form-check-input bg-primary">
+                            <label for="RadioButton2" class="form-check-label text-light">Option 2</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="radio_buttons" value="option3" id="RadioButton3" class="form-check-input bg-info">
+                            <label for="RadioButton3" class="form-check-label text-light">Option 3</label>
+                        </div>
+                    </fieldset>
+                    <button type="submit" id="SubmitButton" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="container bg-dark text-light">
+        <div class="row">
+            <div class="col">
+                <a href="https://www.example.com/page1" rel="nofollow" target="_blank" id="Link1" class="btn btn-link text-light">Page 1</a>
+            </div>
+            <div class="col">
+                <a href="https://www.example.com/page2" rel="nofollow" target="_blank" id="Link2" class="btn btn-link text-light">Page 2</a>
+            </div>
+            <div class="col">
+                <a href="https://www.example.com/page3" rel="nofollow" target="_blank" id="Link3" class="btn btn-link text-light">Page 3</a>
+            </div>
+        </div>
+    </footer>
+</body>

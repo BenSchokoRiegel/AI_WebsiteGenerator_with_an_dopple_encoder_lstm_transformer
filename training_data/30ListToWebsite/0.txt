@@ -1,0 +1,49 @@
+- html
+  - head
+    - title: Online Store
+    - link(rel="stylesheet", href="styles.css")
+  - body
+    - header
+      - h1: Welcome to Our Online Store
+      - nav
+        - ul
+          - li
+            - a(href="home.html"): Home
+          - li
+            - a(href="products.html"): Products
+          - li
+            - a(href="about.html"): About Us
+          - li
+            - a(href="contact.html"): Contact Us
+    - main
+      - section
+        - h2: Featured Products
+        - ul
+          - li
+            - img(src="product1.jpg", alt="Product 1")
+            - h3: Product 1
+            - p: $9.99
+          - li
+            - img(src="product2.jpg", alt="Product 2")
+            - h3: Product 2
+            - p: $14.99
+          - li
+            - img(src="product3.jpg", alt="Product 3")
+            - h3: Product 3
+            - p: $19.99
+      - section
+        - h2: About Us
+        - p: We are a team of passionate individuals who strive to provide the best products and services to our customers.
+        - p: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      - section
+        - h2: Contact Us
+        - form(action="submit.php", method="POST")
+          - label(for="name"): Name:
+          - input(type="text", name="name")
+          - label(for="email"): Email:
+          - input(type="email", name="email")
+          - label(for="message"): Message:
+          - textarea(name="message")
+          - input(type="submit", value="Submit")
+    - footer
+      - p: © 2021 Online Store. All rights reserved.

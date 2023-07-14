@@ -1,0 +1,8 @@
+
+
+this is a simple static html (only the body).
+Add basic bootstrap 4.0 colors to different backgrounds and texts.
+(like bg-light or text-warning from the bootstrap color palette)
+the webpage should look as pleasing as possible.
+Use only bootstrap 4.0 classes, no style tags.
+also seperate elements with <br> tags if it looks better this way.

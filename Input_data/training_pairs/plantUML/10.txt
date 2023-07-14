@@ -1,0 +1,181 @@
+@startuml
+
+object Body
+
+object Header
+
+object Logo {
++ href = "logo.png"
+}
+
+object Navigation
+
+object Main
+
+object Section1
+
+object Paragraph1{
+- Welcome to the World of Computers
+}
+
+object Paragraph2{
+- Explore the latest technologies and advancements
+}
+
+object Image {
++ href = "computers.jpg"
++ alt = "Computer Image"
+- Unleashing Technological Power
+}
+
+object Link {
++ href = "linkedin.com/computers"
++ rel =  "bla"
+- Connect with us on LinkedIn
+}
+
+object List
+
+object ListItem1{
+- Hardware
+}
+
+object ListItem2{
+- Software
+}
+
+object ListItem3{
+- Networking
+}
+
+object Form {
++ action = "submit.php"
++ method = "POST"
+}
+
+object InputName {
++ type = "text"
++ name = "name"
++ placeholder = "name"
+}
+
+object InputEmail {
++ type = "email"
++ name = "email"
++ placeholder = "email"
+}
+
+object SubmitButton {
++ type = "submit"
++ value = "Submit"
+- Submit
+}
+
+object Select {
++ name = "dropdown"
+}
+
+object Option1 {
++ value = "option1"
+- Option 1
+}
+
+object Option2 {
++ value = "option2"
+- Option 2
+}
+
+object Option3 {
++ value = "option3"
+- Option 3
+}
+
+object LinkHOME {
++ href = "#"
+- HOME
+}
+
+object LinkTechnologies {
++ href = "/technologies/"
+- Technologies
+}
+
+object LinkTrends {
++ href = "/trends/"
+- Trends
+}
+
+object LinkResources {
++ href = "/resources/"
+- Resources
+}
+
+object LinkExperts {
++ href = "/experts/"
+- Meet the Experts
+}
+
+object Footer
+
+'SPLIT
+
+Body : <body>
+Header : <header>
+Main : <main>
+Paragraph1 : <p>
+Paragraph2 : <p>
+Footer : <footer>
+ListItem1 : <li>
+ListItem2 : <li>
+ListItem3 : <li>
+List : <ul>
+Navigation : <nav>
+Section1 : <section>
+Link : <link>
+Form : <form>
+Logo : <img>
+Image : <img>
+SubmitButton : <Button>
+InputName : <input>
+InputEmail : <input>
+Select : <select>
+Option1 : <options>
+Option2 : <options>
+Option3 : <options>
+LinkHOME : <link>
+LinkTechnologies : <link>
+LinkTrends : <link>
+LinkResources : <link>
+LinkExperts : <link>
+
+'SPLIT
+
+Body --> Header
+Header --> Logo
+Header --> Navigation
+Body --> Main
+Main --> Section1
+Section1 --> Paragraph1
+Section1 --> Paragraph2
+Paragraph1 --> Image
+Paragraph2 --> Link
+Paragraph1 --> List
+List --> ListItem1
+List --> ListItem2
+List --> ListItem3
+Paragraph2 --> Form
+Form --> InputName
+Form --> InputEmail
+Form --> SubmitButton
+Body --> Footer
+Footer --> Select
+Select --> Option1
+Select --> Option2
+Select --> Option3
+Navigation --> LinkHOME
+Navigation --> LinkTechnologies
+Navigation --> LinkTrends
+Navigation --> LinkResources
+Navigation --> LinkExperts
+
+@enduml

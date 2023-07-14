@@ -1,0 +1,8 @@
+
+
+this is a simple static html.
+Add bootstrap colors to backgrounds and texts. (like bg-light)
+the webpage should look as pleasing as possible.
+Use only bootstrap classes, no style tags.
+I am only interested in the body of the webpage.
+Please respond only with the html code and no further comments.

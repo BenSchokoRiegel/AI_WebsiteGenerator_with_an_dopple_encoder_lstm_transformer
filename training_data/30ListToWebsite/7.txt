@@ -1,0 +1,43 @@
+- html
+  - head
+    - title: My Blog
+    - link(rel="stylesheet", href="styles.css")
+  - body
+    - header
+      - h1: My Blog
+      - nav
+        - ul
+          - li
+            - a(href="home.html"): Home
+          - li
+            - a(href="blog.html"): Blog
+          - li
+            - a(href="about.html"): About
+    - main
+      - section
+        - h2: Latest Posts
+        - ul
+          - li
+            - h3: Post Title 1
+            - p: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          - li
+            - h3: Post Title 2
+            - p: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          - li
+            - h3: Post Title 3
+            - p: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      - section
+        - h2: About Me
+        - p: Hi, I'm Jane. I'm a blogger and I love writing about my experiences and insights.
+      - section
+        - h2: Contact Me
+        - form(action="submit.php", method="POST")
+          - label(for="name"): Name:
+          - input(type="text", name="name")
+          - label(for="email"): Email:
+          - input(type="email", name="email")
+          - label(for="message"): Message:
+          - textarea(name="message")
+          - input(type="submit", value="Send")
+    - footer
+      - p: © 2023 My Blog. All rights reserved.

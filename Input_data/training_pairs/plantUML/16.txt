@@ -1,0 +1,152 @@
+@startuml
+
+object Body
+
+object Header
+
+object Logo {
++ href = "logo.png"
+}
+
+object Navigation
+
+object Main
+
+object Section1
+
+object Paragraph1 {
+- Welcome to the World of Wood
+}
+
+object Paragraph2 {
+- Explore the Beauty and Versatility of Wood
+}
+
+object Image1 {
++ href = "hardwood-flooring.jpg"
++ alt = "Hardwood Flooring"
+- Hardwood Flooring Image
+}
+
+object Image2 {
++ href = "wood-furniture.jpg"
++ alt = "Wood Furniture"
+- Wood Furniture Image
+}
+
+object Image3 {
++ href = "wood-carving.jpg"
++ alt = "Wood Carving"
+- Wood Carving Image
+}
+
+object Link1 {
++ href = "facebook.com/woodcrafting"
++ rel =  "bla"
+- Follow us on Facebook
+}
+
+object Link2 {
++ href = "instagram.com/woodworks"
++ rel =  "bla"
+- Connect with us on Instagram
+}
+
+object List1
+
+object ListItem1 {
+- Hardwood Flooring
+}
+
+object ListItem2 {
+- Wood Furniture
+}
+
+object ListItem3 {
+- Wood Carving
+}
+
+object List2
+
+object ListItem4 {
+- Oak
+}
+
+object ListItem5 {
+- Walnut
+}
+
+object ListItem6 {
+- Maple
+}
+
+object ListItem7 {
+- Teak
+}
+
+object ListItem8 {
+- Cherry
+}
+
+object ListItem9 {
+- Mahogany
+}
+
+object Footer
+
+'SPLIT
+
+Body : <body>
+Header : <header>
+Main : <main>
+Paragraph1 : <p>
+Paragraph2 : <p>
+Footer : <footer>
+Image1 : <img>
+Image2 : <img>
+Image3 : <img>
+Link1 : <link>
+Link2 : <link>
+List1 : <ul>
+List2 : <ul>
+ListItem1 : <li>
+ListItem2 : <li>
+ListItem3 : <li>
+ListItem4 : <li>
+ListItem5 : <li>
+ListItem6 : <li>
+ListItem7 : <li>
+ListItem8 : <li>
+ListItem9 : <li>
+Navigation : <nav>
+Section1 : <section>
+Logo : <img>
+
+'SPLIT
+
+Body --> Header
+Header --> Logo
+Header --> Navigation
+Body --> Main
+Main --> Section1
+Section1 --> Paragraph1
+Section1 --> Paragraph2
+Section1 --> Image1
+Section1 --> Image2
+Section1 --> Image3
+Section1 --> List1
+Section1 --> List2
+Section1 --> Link1
+Section1 --> Link2
+List1 --> ListItem1
+List1 --> ListItem2
+List1 --> ListItem3
+List2 --> ListItem4
+List2 --> ListItem5
+List2 --> ListItem6
+List2 --> ListItem7
+List2 --> ListItem8
+List2 --> ListItem9
+Section1 --> Footer
+
+@enduml

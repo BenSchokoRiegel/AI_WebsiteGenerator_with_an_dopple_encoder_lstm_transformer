@@ -1,0 +1,61 @@
+html
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>My Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Latest Posts</h2>
+      <ul>
+        <li>
+          <h3>Post Title 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </li>
+        <li>
+          <h3>Post Title 2</h3>
+          <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </li>
+        <li>
+          <h3>Post Title 3</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>About Me</h2>
+      <p>Hi, I'm Jane. I'm a blogger and I love writing about my experiences and insights.</p>
+    </section>
+    <section>
+      <h2>Contact Me</h2>
+      <form action="submit.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name">
+        <label for="email">Email:</label>
+        <input type="email" name="email">
+        <label for="message">Message:</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>© 2023 My Blog. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

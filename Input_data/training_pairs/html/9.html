@@ -1,0 +1,65 @@
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="Logo" id="Logo" class="mx-auto d-block">
+            <nav>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a href="#" id="LinkHOME" class="nav-link text-dark">HOME</a></li>
+                    <li class="nav-item"><a href="/overview/" id="LinkOverview" class="nav-link text-dark">Overview</a></li>
+                    <li class="nav-item"><a href="/research/" id="LinkResearch" class="nav-link text-dark">Research Areas</a></li>
+                    <li class="nav-item"><a href="/publications/" id="LinkPublications" class="nav-link text-dark">Publications</a></li>
+                    <li class="nav-item"><a href="/scientists/" id="LinkScientists" class="nav-link text-dark">Meet the Scientists</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <p id="Paragraph1" class="h2 text-primary">Welcome to Space Physics</p>
+                        <p id="Paragraph2" class="h4 text-secondary">Unveiling the mysteries of the cosmos</p>
+                        <img src="space.jpg" alt="Space Image" id="Image" class="img-fluid">
+                        <br>
+                        <a href="twitter.com/spacephysics" rel="bla" id="Link" class="btn btn-primary mt-3">Follow us on Twitter</a>
+                    </div>
+                </div>
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li id="ListItem1" class="list-group-item bg-primary text-white">Solar Physics</li>
+                            <li id="ListItem2" class="list-group-item bg-secondary text-white">Magnetospheric Physics</li>
+                            <li id="ListItem3" class="list-group-item bg-info text-white">Planetary Science</li>
+                        </ul>
+                        <br>
+                        <form action="submit.php" method="POST" id="Form" class="mt-4">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="name" id="InputName" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="email" id="InputEmail" class="form-control">
+                            </div>
+                            <button type="submit" value="Submit" id="SubmitButton" class="btn btn-primary">Submit</button>
+                            <br>
+                            <select name="dropdown" id="Select" class="form-control mt-3">
+                                <option value="option1" id="Option1">Option 1</option>
+                                <option value="option2" id="Option2">Option 2</option>
+                                <option value="option3" id="Option3">Option 3</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <select id="Footer" class="form-control mt-4 bg-light">
+                <option value="option1" id="Option1">Option 1</option>
+                <option value="option2" id="Option2">Option 2</option>
+                <option value="option3" id="Option3">Option 3</option>
+            </select>
+        </div>
+    </footer>
+</body>

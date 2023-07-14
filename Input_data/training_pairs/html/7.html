@@ -1,0 +1,76 @@
+<body>
+    <header>
+        <div class="d-flex justify-content-between align-items-center bg-light">
+            <img src="logo.png" alt="Logo" id="Logo" class="img-fluid">
+            <nav id="Navigation">
+                <a href="#" id="LinkHOME" class="nav-link text-dark">HOME</a>
+                <a href="/exhibits/" id="LinkExhibits" class="nav-link text-dark">Exhibits</a>
+                <a href="/events/" id="LinkEvents" class="nav-link text-dark">Events</a>
+                <a href="/conservation/" id="LinkConservation" class="nav-link text-dark">Conservation</a>
+                <a href="/tickets/" id="LinkTickets" class="nav-link text-dark">Tickets</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="Section1" class="container">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <p class="card-text text-dark">Welcome to Our Zoo!</p>
+                    <p class="card-text text-dark">Explore the diverse wildlife and educational exhibits</p>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="zoo.jpg" alt="Zoo Image" id="Image" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <a href="instagram.com/ourzoo" rel="bla" id="Link" class="btn btn-primary">Follow us on Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-light mb-4">
+                <ul id="List" class="list-group list-group-flush">
+                    <li id="ListItem1" class="list-group-item bg-light text-dark">Animals</li>
+                    <li id="ListItem2" class="list-group-item bg-light text-dark">Shows and Events</li>
+                    <li id="ListItem3" class="list-group-item bg-light text-dark">Conservation Programs</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <form action="submit.php" method="POST" id="Form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Name" id="InputName" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email" id="InputEmail" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" value="Submit" id="SubmitButton" class="btn btn-primary">Submit</button>
+                        </div>
+                        <div class="form-group">
+                            <select name="dropdown" id="Select" class="form-control">
+                                <option value="option1" id="Option1">Option 1</option>
+                                <option value="option2" id="Option2">Option 2</option>
+                                <option value="option3" id="Option3">Option 3</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center mt-4">
+        <div>
+            <select id="Select" class="form-control">
+                <option value="option1" id="Option1">Option 1</option>
+                <option value="option2" id="Option2">Option 2</option>
+                <option value="option3" id="Option3">Option 3</option>
+            </select>
+        </div>
+    </footer>
+</body>

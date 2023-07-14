@@ -1,0 +1,40 @@
+- html
+  - head
+    - title: Recipe Website
+    - link(rel="stylesheet", href="styles.css")
+  - body
+    - header
+      - h1: Delicious Recipes
+      - nav
+        - ul
+          - li
+            - a(href="home.html"): Home
+          - li
+            - a(href="recipes.html"): Recipes
+          - li
+            - a(href="about.html"): About Us
+    - main
+      - section
+        - h2: Popular Recipes
+        - ul
+          - li
+            - h3: Chicken Alfredo
+            - p: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          - li
+            - h3: Chocolate Cake
+            - p: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          - li
+            - h3: Caesar Salad
+            - p: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      - section
+        - h2: Submit Your Own Recipe
+        - form(action="submit.php", method="POST")
+          - label(for="name"): Name:
+          - input(type="text", name="name")
+          - label(for="email"): Email:
+          - input(type="email", name="email")
+          - label(for="recipe"): Recipe:
+          - textarea(name="recipe")
+          - input(type="submit", value="Submit")
+    - footer
+      - p: © 2023 Delicious Recipes. All rights reserved.

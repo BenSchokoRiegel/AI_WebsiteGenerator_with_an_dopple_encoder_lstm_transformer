@@ -1,0 +1,43 @@
+- html
+  - head
+    - title: My Blog
+    - link(rel="stylesheet", href="blog.css")
+  - body
+    - header
+      - h1: My Blog
+      - nav
+        - ul
+          - li
+            - a(href="index.html"): Home
+          - li
+            - a(href="categories.html"): Categories
+          - li
+            - a(href="about.html"): About Me
+    - main
+      - section
+        - h2: Latest Posts
+        - article
+          - h3: Post Title 1
+          - p: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          - p: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          - a(href="post1.html"): Read More
+        - article
+          - h3: Post Title 2
+          - p: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          - p: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          - a(href="post2.html"): Read More
+      - section
+        - h2: Popular Categories
+        - ul
+          - li
+            - a(href="category1.html"): Category 1
+          - li
+            - a(href="category2.html"): Category 2
+          - li
+            - a(href="category3.html"): Category 3
+      - section
+        - h2: About Me
+        - p: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        - p: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    - footer
+      - p: © 2023 My Blog. All rights reserved.

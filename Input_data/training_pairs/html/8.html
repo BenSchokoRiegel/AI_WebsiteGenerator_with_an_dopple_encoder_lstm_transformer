@@ -1,0 +1,99 @@
+<body>
+    <header>
+        <div class="container">
+            <img id="Logo" src="logo.png" alt="Logo" class="img-fluid">
+        </div>
+        <nav id="Navigation" class="navbar navbar-expand-lg navbar-light bg-light">
+            <a id="LinkHOME" class="navbar-brand" href="#">HOME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a id="LinkOverview" class="nav-link" href="/overview/">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="LinkResearch" class="nav-link" href="/research/">Research Areas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="LinkPublications" class="nav-link" href="/publications/">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="LinkScientists" class="nav-link" href="/scientists/">Meet the Scientists</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="Section1" class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <p id="Paragraph1" class="card-title text-primary">Welcome to Space Physics</p>
+                            <p id="Paragraph2" class="card-text">Unveiling the mysteries of the cosmos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img id="Image" src="space.jpg" alt="Space Image" class="card-img-top">
+                        <div class="card-body">
+                            <a id="Link" href="twitter.com/spacephysics" rel="bla" class="card-link text-primary">Follow us on Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <ul id="List" class="list-group">
+                                <li id="ListItem1" class="list-group-item bg-primary text-light">Solar Physics</li>
+                                <li id="ListItem2" class="list-group-item bg-primary text-light">Magnetospheric Physics</li>
+                                <li id="ListItem3" class="list-group-item bg-primary text-light">Planetary Science</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <form id="Form" action="submit.php" method="POST">
+                                <div class="form-group">
+                                    <input id="InputName" type="text" name="name" placeholder="name" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input id="InputEmail" type="email" name="email" placeholder="email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <button id="SubmitButton" type="submit" value="Submit" class="btn btn-primary">Submit</button>
+                                </div>
+                                <div class="form-group">
+                                    <select id="Select" name="dropdown" class="form-control">
+                                        <option id="Option1" value="option1">Option 1</option>
+                                        <option id="Option2" value="option2">Option 2</option>
+                                        <option id="Option3" value="option3">Option 3</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <select id="Footer" class="form-control bg-light">
+                <option id="Option1" value="option1" class="text-primary">Option 1</option>
+                <option id="Option2" value="option2" class="text-primary">Option 2</option>
+                <option id="Option3" value="option3" class="text-primary">Option 3</option>
+            </select>
+        </div>
+    </footer>
+</body>

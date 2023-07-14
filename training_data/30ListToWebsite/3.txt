@@ -1,0 +1,41 @@
+- html
+  - head
+    - title: My Blog
+    - link(rel="stylesheet", href="styles.css")
+  - body
+    - header
+      - h1: Welcome to My Blog
+      - nav
+        - ul
+          - li
+            - a(href="home.html"): Home
+          - li
+            - a(href="blog.html"): Blog
+          - li
+            - a(href="about.html"): About
+    - main
+      - section
+        - h2: Latest Posts
+        - ul
+          - li
+            - a(href="post1.html"): Post 1
+          - li
+            - a(href="post2.html"): Post 2
+          - li
+            - a(href="post3.html"): Post 3
+      - section
+        - h2: About Me
+        - p: Hi! My name is John and I'm a blogger from New York.
+        - p: I love to write about technology, travel, and food.
+      - section
+        - h2: Contact Me
+        - form(action="submit.php", method="POST")
+          - label(for="name"): Name:
+          - input(type="text", name="name")
+          - label(for="email"): Email:
+          - input(type="email", name="email")
+          - label(for="message"): Message:
+          - textarea(name="message")
+          - input(type="submit", value="Submit")
+    - footer
+      - p: © 2023 My Blog. All rights reserved.

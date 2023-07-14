@@ -1,0 +1,99 @@
+@startuml
+
+object Body
+object Header
+object Logo {
++ href = "logo.png"
+}
+object Navigation
+object Main
+object Section1
+object Section2
+object Paragraph1{
+- Das ist mein Hund Bernhard
+}
+object Paragraph2{
+- Das ist Bernhard beim spielen in unserem 460m² Anwesen
+}
+object Image {
++ href = "doggy.gif"
++ alt = "Bernhard, mein Hund"
+- woof
+}
+object Link {
++ href = "youtube.com/mydog"
++ rel =  "bla"
+}
+object List
+object ListItem1{
+- Mehl
+}
+object ListItem2{
+- Milch
+}
+object ListItem3{
+- Eier
+}
+object Form {
++ action = "submit.php"
++ method = "POST"
+}
+object InputName {
++ type = "text"
++ name = "name"
++ placeholder = "name"
+}
+object InputEmail {
++ type = "email"
++ name = "email"
++ placeholder = "email"
+}
+object SubmitButton {
++ type = "submit"
++ value = "Submit"
+- Submit
+}
+object Footer
+
+Body : <body>
+Header : <header>
+Main : <main>
+Paragraph1 : <p>
+Paragraph2 : <p>
+Footer : <footer>
+ListItem1 : <li>
+ListItem2 : <li>
+ListItem3 : <li>
+List : <ul>
+Navigation : <nav>
+Section1 : <section>
+Section2 : <section>
+Link : <link>
+Form : <form>
+Logo : <img>
+Image : <img>
+SubmitButton : <Button>
+InputName : <input>
+InputEmail : <input>
+
+Body --> Header
+Header --> Logo
+Header --> Navigation
+Body --> Main
+Main --> Section1
+Main --> Section2
+Section1 --> Paragraph1
+Section2 --> Paragraph2
+Paragraph1 --> Image
+Paragraph2 --> Link
+Paragraph1 --> List
+List --> ListItem1
+List --> ListItem2
+List --> ListItem3
+Paragraph2 --> Form
+Form --> InputName
+Form --> InputEmail
+Form --> SubmitButton
+Body --> Footer
+
+@enduml

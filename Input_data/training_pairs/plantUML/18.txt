@@ -1,0 +1,155 @@
+@startumlobject 
+Bodyobject 
+Headerobject 
+Logo {
++ href = "logo.png"
+} 
+object Navigationobject 
+Mainobject 
+Section1object 
+Paragraph1{
+- Lorem ipsum dolor sit amet
+} 
+object Image {
++ href = "randomimage.jpg"
++ alt = "Random Image"
+} 
+object Link {
++ href = "youtube.com/randomvideo"
++ rel = "bla"- Link to Video
+} 
+object Listobject 
+ListItem1{
+- Sed ut perspiciatis unde omnis iste natus error
+} 
+ListItem2{
+- Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+} 
+ListItem3{
+- Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
+} 
+object Form {
++ action = "submit.php"
++ method = "POST"
+} 
+object InputName {
++ type = "text"
++ name = "name"
++ placeholder = "name"
+} 
+object InputEmail {
++ type = "email"
++ name = "email"
++ placeholder = "email"
+} 
+object SubmitButton {
++ type = "submit"
++ value = "Submit"
+- Submit
+} 
+object Select {
++ name = "dropdown"
+} 
+object Option1 {
++ value = "option1"
+- Option 1
+} 
+object Option2 {
++ value = "option2"
+- Option 2
+} 
+object Option3 {
++ value = "option3"
+- Option 3
+} 
+object Radio1 {
++ type = "radio"
++ name = "radio1"
++ value = "radio1value"
+- Radio 1
+} 
+object Radio2 {
++ type = "radio"
++ name = "radio1"
++ value = "radio2value"
+- Radio 2
+} 
+object LinkHOME {
++ href = "#"
+- HOME
+} 
+object LinkContact {
++ href = "/contact/"
+- Contact
+} 
+object LinkAbout {
++ href = "/about/"
+- About
+} 
+object LinkServices {
++ href = "/services/"
+- Services
+} 
+object Footer
+
+'SPLIT
+
+Body : <body>
+Header : <header>
+Main : <main>
+Paragraph1 : <p>
+Footer : <footer>
+ListItem1 : <li>
+ListItem2 : <li>
+ListItem3 : <li>
+List : <ul>
+Navigation : <nav>
+Section1 : <section>
+Link : <link>
+Form : <form>
+Logo : <img>
+Image : <img>
+SubmitButton : <Button>
+InputName : <input>
+InputEmail : <input>
+Select : <select>
+Option1 : <options>
+Option2 : <options>
+Option3 : <options>
+Radio1 : <input>
+Radio2 : <input>
+LinkHOME : <link>
+LinkContact : <link>
+LinkAbout : <link>
+LinkServices : <link>
+
+'SPLIT
+
+Body --> Header
+Header --> Logo
+Header --> Navigation
+Body --> Main
+Main --> Section1
+Section1 --> Paragraph1
+Section1 --> Image
+Paragraph1 --> List
+List --> ListItem1
+List --> ListItem2
+List --> ListItem3
+Main --> Form
+Form --> InputName
+Form --> InputEmail
+Form --> SubmitButton
+Form --> Select
+Select --> Option1
+Select --> Option2
+Select --> Option3
+Form --> Radio1
+Form --> Radio2
+Navigation --> LinkHOME
+Navigation --> LinkContact
+Navigation --> LinkAbout
+Navigation --> LinkServices
+Footer --> Paragraph1
+
+@enduml
