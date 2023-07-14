@@ -1,0 +1,127 @@
+
+object Body
+object Header
+object Logo {
++ href = "logo.png"
+}
+object Navigation
+object Main
+object Section1
+object Paragraph1 {
+- Did you know that underwater volcanoes exist?
+}
+object Image1 {
++ href = "underwater_volcano.jpg"
++ alt = "Underwater Volcano"
+- eruption
+}
+object Section2
+object Paragraph2 {
+- These volcanoes are formed by lava erupting from the ocean floor.
+}
+object Image2 {
++ href = "ocean_floor.jpg"
++ alt = "Ocean Floor"
+- seafloor
+}
+object Section3
+object Paragraph3 {
+- Underwater volcanoes release immense amounts of heat and gases, shaping the underwater landscape.
+}
+object Image3 {
++ href = "underwater_landscape.jpg"
++ alt = "Underwater Landscape"
+- landscape
+}
+object Section4
+object Paragraph4 {
+- The volcanic activity also creates unique ecosystems, providing habitats for diverse marine life.
+}
+object Image4 {
++ href = "marine_life.jpg"+ alt = "Marine Life"- marine
+}
+object Section5
+object Paragraph5 {
+- Scientists study underwater volcanoes to gain insights into Earth's geological processes.
+}
+object Image5 {
++ href = "geological_processes.jpg"
++ alt = "Geological Processes"
+- processes
+}
+object Section6
+object Form {
++ action = "submit.php"
++ method = "POST"
+}
+object InputName {
++ type = "text"
++ name = "name"
++ placeholder = "Your Name"
+}
+object InputEmail {
++ type = "email"
++ name = "email"
++ placeholder = "Your Email"
+}
+object SubmitButton {
++ type = "submit"
++ value = "Submit"
+- Submit
+}
+object Footer
+
+'SPLIT
+
+Body : <body>
+Header : <header>
+Main : <main>
+Section1 : <section>
+Paragraph1 : <p>
+Image1 : <img>
+Section2 : <section>
+Paragraph2 : <p>
+Image2 : <img>
+Section3 : <section>
+Paragraph3 : <p>
+Image3 : <img>
+Section4 : <section>
+Paragraph4 : <p>
+Image4 : <img>
+Section5 : <section>
+Paragraph5 : <p>
+Image5 : <img>
+Section6 : <section>
+Form : <form>
+InputName : <input>
+InputEmail : <input>
+SubmitButton : <button>
+Footer : <footer>
+
+'SPLIT
+
+Body --> Header
+Header --> Logo
+Header --> Navigation
+Body --> Main
+Main --> Section1
+Section1 --> Paragraph1
+Section1 --> Image1
+Main --> Section2
+Section2 --> Paragraph2
+Section2 --> Image2
+Main --> Section3
+Section3 --> Paragraph3
+Section3 --> Image3
+Main --> Section4
+Section4 --> Paragraph4
+Section4 --> Image4
+Main --> Section5
+Section5 --> Paragraph5
+Section5 --> Image5
+Main --> Section6
+Section6 --> Form
+Form --> InputName
+Form --> InputEmail
+Form --> SubmitButton
+Body --> Footer

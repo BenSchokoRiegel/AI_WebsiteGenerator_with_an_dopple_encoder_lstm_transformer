@@ -1,0 +1,181 @@
+@startuml
+
+object Body
+
+object Header
+
+object Logo {
++ href = "logo.png"
+}
+
+object Navigation
+
+object Main
+
+object Section1
+
+object Paragraph1{
+- Explore the World of Sharks
+}
+
+object Paragraph2{
+- Discover the fascinating facts and species
+}
+
+object Image {
++ href = "shark.jpg"
++ alt = "Shark Image"
+- Into the Deep Blue
+}
+
+object Link {
++ href = "facebook.com/sharks"
++ rel =  "bla"
+- Like us on Facebook
+}
+
+object List
+
+object ListItem1{
+- Great White Shark
+}
+
+object ListItem2{
+- Tiger Shark
+}
+
+object ListItem3{
+- Hammerhead Shark
+}
+
+object Form {
++ action = "submit.php"
++ method = "POST"
+}
+
+object InputName {
++ type = "text"
++ name = "name"
++ placeholder = "name"
+}
+
+object InputEmail {
++ type = "email"
++ name = "email"
++ placeholder = "email"
+}
+
+object SubmitButton {
++ type = "submit"
++ value = "Submit"
+- Submit
+}
+
+object Select {
++ name = "dropdown"
+}
+
+object Option1 {
++ value = "option1"
+- Option 1
+}
+
+object Option2 {
++ value = "option2"
+- Option 2
+}
+
+object Option3 {
++ value = "option3"
+- Option 3
+}
+
+object LinkHOME {
++ href = "#"
+- HOME
+}
+
+object LinkFacts {
++ href = "/facts/"
+- Facts
+}
+
+object LinkSpecies {
++ href = "/species/"
+- Species
+}
+
+object LinkConservation {
++ href = "/conservation/"
+- Conservation
+}
+
+object LinkGallery {
++ href = "/gallery/"
+- Gallery
+}
+
+object Footer
+
+'SPLIT
+
+Body : <body>
+Header : <header>
+Main : <main>
+Paragraph1 : <p>
+Paragraph2 : <p>
+Footer : <footer>
+ListItem1 : <li>
+ListItem2 : <li>
+ListItem3 : <li>
+List : <ul>
+Navigation : <nav>
+Section1 : <section>
+Link : <link>
+Form : <form>
+Logo : <img>
+Image : <img>
+SubmitButton : <Button>
+InputName : <input>
+InputEmail : <input>
+Select : <select>
+Option1 : <options>
+Option2 : <options>
+Option3 : <options>
+LinkHOME : <link>
+LinkFacts : <link>
+LinkSpecies : <link>
+LinkConservation : <link>
+LinkGallery : <link>
+
+'SPLIT
+
+Body --> Header
+Header --> Logo
+Header --> Navigation
+Body --> Main
+Main --> Section1
+Section1 --> Paragraph1
+Section1 --> Paragraph2
+Paragraph1 --> Image
+Paragraph2 --> Link
+Paragraph1 --> List
+List --> ListItem1
+List --> ListItem2
+List --> ListItem3
+Paragraph2 --> Form
+Form --> InputName
+Form --> InputEmail
+Form --> SubmitButton
+Body --> Footer
+Footer --> Select
+Select --> Option1
+Select --> Option2
+Select --> Option3
+Navigation --> LinkHOME
+Navigation --> LinkFacts
+Navigation --> LinkSpecies
+Navigation --> LinkConservation
+Navigation --> LinkGallery
+
+@enduml

@@ -1,0 +1,151 @@
+@startuml
+object Body
+object Header
+object Logo {
++ href = "logo.png"
+}
+object Navigation
+object Main
+object Section1
+object Section2
+object Image {
++ href = "random.gif"
++ alt = "Random Image"
+}
+object Link1 {
++ href = "#"
++ rel = "nofollow"
++ title = "Click me!"
+- Link 1
+}
+object Link2 {
++ href = "#"
++ rel = "noopener"
+- Link 2
+}
+object Form {
++ action = "submit.php"
++ method = "POST"
+}
+object InputName {
++ type = "text"
++ name = "name"
++ placeholder = "Name"
+}
+object InputEmail {
++ type = "email"
++ name = "email"
++ placeholder = "Email"
+}
+object InputRadio1 {
++ type = "radio"
++ name = "radio"
++ value = "option1"
+- Option 1
+}
+object InputRadio2 {
++ type = "radio"
++ name = "radio"
++ value = "option2"
+- Option 2
+}
+object InputCheckbox {
++ type = "checkbox"
++ name = "checkbox"
++ value = "checked"
+- Checkbox
+}
+object SubmitButton {
++ type = "submit"
++ value = "Submit"
+- Submit
+}
+object Select {
++ name = "dropdown"
+}
+object Option1 {
++ value = "option1"
+- Option 1
+}
+object Option2 {
++ value = "option2"
+- Option 2
+}
+object Option3 {
++ value = "option3"
+- Option 3
+}
+object LinkHome {
++ href = "#"
+- Home
+}
+object LinkAbout {
++ href = "/about"
+- About
+}
+object LinkContact {
++ href = "/contact"
+- Contact
+}
+object LinkBlog {
++ href = "/blog"
+- Blog
+}
+object Footer
+
+'SPLIT
+
+Body : <body>
+Header : <header>
+Main : <main>
+Footer : <footer>
+Logo : <img>
+Navigation : <nav>
+Section1 : <section>
+Section2 : <section>
+Paragraph1 : <p>
+Paragraph2 : <p>
+Image : <img>
+Link1 : <a>
+Link2 : <a>
+Form : <form>
+InputName : <input>
+InputEmail : <input>
+InputRadio1 : <input>
+InputRadio2 : <input>
+InputCheckbox : <input>
+SubmitButton : <button>
+Select : <select>
+Option1 : <option>
+Option2 : <option>
+Option3 : <option>
+LinkHome : <a>
+LinkAbout : <a>
+LinkContact : <a>
+LinkBlog : <a>
+
+'SPLIT
+
+Body --> Header
+Header --> Logo
+Header --> Navigation
+Body --> Main
+Main --> Section1
+Section1 --> Paragraph1
+Section1 --> Image
+Section1 --> Section2
+Section2 --> Paragraph2
+Section2 --> Form
+Form --> InputName
+Form --> InputEmail
+Form --> InputRadio1
+Form --> InputRadio2
+Form --> InputCheckbox
+Form --> Select
+Form --> SubmitButton
+Navigation --> LinkHome
+Navigation --> LinkAbout
+Navigation --> LinkContact
+Navigation --> LinkBlog
+Body --> Footer
+@enduml

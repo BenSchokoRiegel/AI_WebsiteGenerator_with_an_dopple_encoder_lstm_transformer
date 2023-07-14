@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Bootstrap HTML</title>
+</head>
+<body class="bg-light">
+  <div class="container">
+    <header id="Header" class="card bg-primary text-white">
+      <div class="card-body d-flex justify-content-between">
+        <img id="Logo" src="random_topic_logo.png" class="img-fluid" alt="Logo">
+        <nav id="Navigation">
+          <a id="LinkHome" href="#" class="btn btn-primary">Home</a>
+          <a id="LinkAbout" href="/about.html" class="btn btn-primary">About</a>
+          <a id="LinkContact" href="/contact.html" class="btn btn-primary">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="Main">
+      <section id="Section1" class="card bg-light">
+        <div class="card-body">
+          <p id="Paragraph1" class="card-text">Lorem ipsum dolor sit amet</p>
+          <p id="Paragraph2" class="card-text">Consectetur adipiscing elit</p>
+          <p id="Paragraph3" class="card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        </div>
+      </section>
+      <div class="card bg-light">
+        <img id="Image1" src="random_topic_image1.jpg" alt="Random Image 1" class="card-img-top">
+        <div class="card-body">
+          <ul id="List1" class="list-group">
+            <li id="ListItem1" class="list-group-item">Item 1</li>
+            <li id="ListItem2" class="list-group-item">Item 2</li>
+            <li id="ListItem3" class="list-group-item">Item 3</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card bg-light">
+        <form id="Form" action="submit.php" method="POST" class="card-body">
+          <input id="InputName" type="text" name="name" placeholder="Name" class="form-control mb-2">
+          <input id="InputEmail" type="email" name="email" placeholder="Email" class="form-control mb-2">
+          <fieldset id="RadioButtons" class="form-group">
+            <div class="form-check">
+              <input id="RadioButton1" type="radio" name="radio_buttons" value="option1" class="form-check-input">
+              <label for="RadioButton1" class="form-check-label">Option 1</label>
+            </div>
+            <div class="form-check">
+              <input id="RadioButton2" type="radio" name="radio_buttons" value="option2" class="form-check-input">
+              <label for="RadioButton2" class="form-check-label">Option 2</label>
+            </div>
+            <div class="form-check">
+              <input id="RadioButton3" type="radio" name="radio_buttons" value="option3" class="form-check-input">
+              <label for="RadioButton3" class="form-check-label">Option 3</label>
+            </div>
+          </fieldset>
+          <button id="SubmitButton" type="submit" value="Submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </main>
+    <footer id="Footer" class="card bg-primary text-white">
+      <div class="card-body">
+        <a id="Link1" href="https://www.example.com/page1" rel="nofollow" target="_blank" class="btn btn-primary">Page 1</a>
+        <br>
+        <a id="Link2" href="https://www.example.com/page2" rel="nofollow" target="_blank" class="btn btn-primary">Page 2</a>
+        <br>
+        <a id="Link3" href="https://www.example.com/page3" rel="nofollow" target="_blank" class="btn btn-primary">Page 3</a>
+      </div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

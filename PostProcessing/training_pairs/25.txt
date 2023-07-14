@@ -1,0 +1,183 @@
+@startuml 
+
+
+object Body
+
+object Header
+
+object Logo {
++ href = "random_logo.png"
+}
+
+object Navigation
+
+object Main
+
+object Section1
+
+object Paragraph1{
+- This is a random topic
+}
+
+object Paragraph2{
+- Here is some information about the random topic
+}
+
+object Image {
++ href = "random_image.gif"
++ alt = "Random Image"
+- Some description about the random image
+}
+
+object Link {
++ href = "random_link.com"
++ rel =  "random"
+- Random Link
+}
+
+object List
+
+object ListItem1{
+- Item 1
+}
+
+object ListItem2{
+- Item 2
+}
+
+object ListItem3{
+- Item 3
+}
+
+object Form {
++ action = "submit.php"
++ method = "POST"
+}
+
+object InputName {
++ type = "text"
++ name = "name"
++ placeholder = "name"
+}
+
+object InputEmail {
++ type = "email"
++ name = "email"
++ placeholder = "email"
+}
+
+object SubmitButton {
++ type = "submit"
++ value = "Submit"
+- Submit
+}
+
+object Select {
++ name = "dropdown"
+}
+
+object Option1 {
++ value = "option1"
+- Option 1
+}
+
+object Option2 {
++ value = "option2"
+- Option 2
+}
+
+object Option3 {
++ value = "option3"
+- Option 3
+}
+
+object LinkHOME {
++ href = "#"
+- HOME
+}
+
+object LinkHTML {
++ href = "/html/"
+- HTML
+}
+
+object LinkCSS {
++ href = "/css/"
+- CSS
+}
+
+object LinkJS {
++ href = "/js/"
+- JavaScript
+}
+
+object LinkPython {
++ href = "/python/"
+- Python
+}
+
+object Footer
+
+'SPLIT
+
+Body : <body>
+Header : <header>
+Main : <main>
+Paragraph1 : <p>
+Paragraph2 : <p>
+Footer : <footer>
+ListItem1 : <li>
+ListItem2 : <li>
+ListItem3 : <li>
+List : <ul>
+Navigation : <nav>
+Section1 : <section>
+Link : <link>
+Form : <form>
+Logo : <img>
+Image : <img>
+SubmitButton : <Button>
+InputName : <input>
+InputEmail : <input>
+Select : <select>
+Option1 : <options>
+Option2 : <options>
+Option3 : <options>
+LinkHOME : <link>
+LinkHTML : <link>
+LinkPython : <link>
+LinkJS : <link>
+LinkCSS : <link>
+
+'SPLIT
+
+Body --> Header
+Header --> Logo
+Header --> Navigation
+Body --> Main
+Main --> Section1
+Section1 --> Paragraph1
+Section1 --> Paragraph2
+Paragraph1 --> Image
+Paragraph2 --> Link
+Paragraph1 --> List
+List --> ListItem1
+List --> ListItem2
+List --> ListItem3
+Paragraph2 --> Form
+Form --> InputName
+Form --> InputEmail
+Form --> SubmitButton
+Body --> Footer
+Footer --> Select
+Select --> Option1
+Select --> Option2
+Select --> Option3
+Navigation --> LinkHOME
+Navigation --> LinkHTML
+Navigation --> LinkCSS
+Navigation --> LinkJS
+Navigation --> LinkPython
+
+ 
+@enduml

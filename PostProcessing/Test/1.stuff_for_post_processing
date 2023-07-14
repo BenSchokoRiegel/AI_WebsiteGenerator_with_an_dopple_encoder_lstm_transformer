@@ -1,0 +1,116 @@
+object Body
+
+object Header
+
+object Logo {
++ href = "logo.png"
+}
+
+object Navigation
+
+object Main
+
+object Section1
+
+object Paragraph1{
+- Welcome to the World of Football
+}
+
+object Paragraph2{
+- Explore the latest football news, match highlights, and more!
+}
+
+object Image {
++ href = "football.jpg"
++ alt = "Football Image"
+- Goaaaaal!
+}
+
+object Link {
++ href = "youtube.com/footballvideos"
++ rel =  "bla"
+- Link to Videos
+}
+
+object List
+
+object ListItem1{
+- Premier League
+}
+
+object ListItem2{
+- UEFA Champions League
+}
+
+object ListItem3{
+- FIFA World Cup
+}
+
+object Form {
++ action = "submit.php"
++ method = "POST"
+}
+
+object InputName {
++ type = "text"
++ name = "name"
++ placeholder = "name"
+}
+
+object InputEmail {
++ type = "email"
++ name = "email"
++ placeholder = "email"
+}
+
+object SubmitButton {
++ type = "submit"
++ value = "Submit"
+- Submit
+}
+
+object Select {
++ name = "dropdown"
+}
+
+object Option1 {
++ value = "option1"
+- Option 1
+}
+
+object Option2 {
++ value = "option2"
+- Option 2
+}
+
+object Option3 {
++ value = "option3"
+- Option 3
+}
+
+object LinkHOME {
++ href = "#"
+- HOME
+}
+
+object LinkNews {
++ href = "/news/"
+- News
+}
+
+object LinkMatches {
++ href = "/matches/"
+- Matches
+}
+
+object LinkPlayers {
++ href = "/players/"
+- Players
+}
+
+object LinkTeams {
++ href = "/teams/"
+- Teams
+}
+
+object Footer

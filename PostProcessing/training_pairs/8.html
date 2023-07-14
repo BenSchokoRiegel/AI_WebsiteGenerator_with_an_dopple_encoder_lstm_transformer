@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Space Physics</title>
+    <style>
+        body {
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        #Logo {
+            max-width: 100%;
+            height: auto;
+        }
+        #Navigation {
+            margin-top: 10px;
+        }
+        #LinkHOME, #LinkOverview, #LinkResearch, #LinkPublications, #LinkScientists {
+            margin-right: 10px;
+        }
+        main {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        #Section1 {
+            margin-bottom: 50px;
+        }
+        #Image {
+            max-width: 100%;
+            height: auto;
+        }
+        #Link {
+            margin-bottom: 10px;
+        }
+        #List {
+            margin-bottom: 10px;
+        }
+        #Form {
+            margin-top: 10px;
+        }
+        #Footer {
+            background-color: #ffffff;
+            padding: 10px;
+            border-top: 1px solid #dee2e6;
+        }
+    </style>
+</head>
+<body>
+    <header id="Header">
+        <div class="container">
+            <img id="Logo" src="logo.png" class="img-fluid">
+            <nav id="Navigation" class="mt-3">
+                <a id="LinkHOME" href="#" class="btn btn-primary mr-2">HOME</a>
+                <a id="LinkOverview" href="/overview/" class="btn btn-primary mr-2">Overview</a>
+                <a id="LinkResearch" href="/research/" class="btn btn-primary mr-2">Research Areas</a>
+                <a id="LinkPublications" href="/publications/" class="btn btn-primary mr-2">Publications</a>
+                <a id="LinkScientists" href="/scientists/" class="btn btn-primary mr-2">Meet the Scientists</a>
+            </nav>
+        </div>
+    </header>
+    <main id="Main" class="my-5">
+        <section id="Section1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="card-title">Welcome to Space Physics</h4>
+                                <p class="card-text">Unveiling the mysteries of the cosmos</p>
+                            </div>
+                            <img id="Image" src="space.jpg" alt="Space Image" class="card-img-bottom">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <a id="Link" href="twitter.com/spacephysics" rel="bla" class="btn btn-primary mb-3">Follow us on Twitter</a>
+                                <ul id="List" class="list-group">
+                                    <li id="ListItem1" class="list-group-item">Solar Physics</li>
+                                    <li id="ListItem2" class="list-group-item">Magnetospheric Physics</li>
+                                    <li id="ListItem3" class="list-group-item">Planetary Science</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <form id="Form" action="submit.php" method="POST">
+                                    <div class="form-group">
+                                        <input id="InputName" type="text" name="name" placeholder="Name" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="InputEmail" type="email" name="email" placeholder="Email" class="form-control">
+                                    </div>
+                                    <button id="SubmitButton" type="submit" value="Submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="Footer">
+        <div class="container">
+            <select id="Select" class="form-control bg-light">
+                <option id="Option1" value="option1">Option 1</option>
+                <option id="Option2" value="option2">Option 2</option>
+                <option id="Option3" value="option3">Option 3</option>
+            </select>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

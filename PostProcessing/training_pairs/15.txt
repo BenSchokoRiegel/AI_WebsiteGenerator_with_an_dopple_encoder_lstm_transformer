@@ -1,0 +1,245 @@
+@startuml
+
+object Body
+
+object Header
+
+object Logo {
++ href = "logo.png"
+}
+
+object Navigation
+
+object Main
+
+object Section1
+
+object Section2
+
+object Section3
+
+object Recipe1 {
++ name = "Italian Pasta"
+- Delicious Pasta Recipe
+}
+
+object Recipe2 {
++ name = "Asian Stir-Fry"
+- Exotic Stir-Fry Recipe
+}
+
+object Recipe3 {
++ name = "Mexican Tacos"
+- Spicy Taco Recipe
+}
+
+object Ingredient1 {
++ name = "Pasta"
+}
+
+object Ingredient2 {
++ name = "Chicken"
+}
+
+object Ingredient3 {
++ name = "Tomatoes"
+}
+
+object Ingredient4 {
++ name = "Onions"
+}
+
+object Ingredient5 {
++ name = "Soy Sauce"
+}
+
+object Ingredient6 {
++ name = "Cilantro"
+}
+
+object Ingredient7 {
++ name = "Tortillas"
+}
+
+object Ingredient8 {
++ name = "Beef"
+}
+
+object Ingredient9 {
++ name = "Avocado"
+}
+
+object Step1 {
+- Step 1: Boil water and cook pasta until al dente.
+}
+
+object Step2 {
+- Step 2: Heat oil in a pan, add chicken, onions, and tomatoes. Cook until chicken is done.
+}
+
+object Step3 {
+- Step 3: Add soy sauce and cilantro to the pan. Stir-fry for a few minutes.
+}
+
+object Step4 {
+- Step 4: Warm tortillas and fill them with beef, avocado, and onions.
+}
+
+object Step5 {
+- Step 5: Enjoy your delicious tacos!
+}
+
+object Image1 {
++ href = "italian-pasta.jpg"
++ alt = "Italian Pasta"
+- Italian Pasta Image
+}
+
+object Image2 {
++ href = "asian-stir-fry.jpg"
++ alt = "Asian Stir-Fry"
+- Asian Stir-Fry Image
+}
+
+object Image3 {
++ href = "mexican-tacos.jpg"
++ alt = "Mexican Tacos"
+- Mexican Tacos Image
+}
+
+object Link {
++ href = "instagram.com/cookingdelights"
++ rel =  "bla"
+- Follow us on Instagram
+}
+
+object List1
+
+object ListItem1{
+- Pasta
+}
+
+object ListItem2{
+- Chicken
+}
+
+object ListItem3{
+- Tomatoes
+}
+
+object List2
+
+object ListItem4{
+- Soy Sauce
+}
+
+object ListItem5{
+- Cilantro
+}
+
+object ListItem6{
+- Tortillas
+}
+
+object ListItem7{
+- Beef
+}
+
+object ListItem8{
+- Avocado
+}
+
+object ListItem9{
+- Onions
+}
+
+object Footer
+
+'SPLIT
+
+Body : <body>
+Header : <header>
+Main : <main>
+Recipe1 : <div>
+Recipe2 : <div>
+Recipe3 : <div>
+Ingredient1 : <div>
+Ingredient2 : <div>
+Ingredient3 : <div>
+Ingredient4 : <div>
+Ingredient5 : <div>
+Ingredient6 : <div>
+Ingredient7 : <div>
+Ingredient8 : <div>
+Ingredient9 : <div>
+Step1 : <div>
+Step2 : <div>
+Step3 : <div>
+Step4 : <div>
+Step5 : <div>
+Image1 : <img>
+Image2 : <img>
+Image3 : <img>
+Link : <link>
+List1 : <ul>
+List2 : <ul>
+ListItem1 : <li>
+ListItem2 : <li>
+ListItem3 : <li>
+ListItem4 : <li>
+ListItem5 : <li>
+ListItem6 : <li>
+ListItem7 : <li>
+ListItem8 : <li>
+ListItem9 : <li>
+Navigation : <nav>
+Section1 : <section>
+Section2 : <section>
+Section3 : <section>
+Logo : <img>
+Footer : <footer>
+
+'SPLIT
+
+Body --> Header
+Header --> Logo
+Header --> Navigation
+Body --> Main
+Main --> Section1
+Main --> Section2
+Main --> Section3
+Section1 --> Recipe1
+Section1 --> Recipe2
+Section1 --> Recipe3
+Section1 --> Image1
+Section2 --> Ingredient1
+Section2 --> Ingredient2
+Section2 --> Ingredient3
+Section2 --> Ingredient4
+Section2 --> Ingredient5
+Section2 --> Ingredient6
+Section2 --> Ingredient7
+Section3 --> Ingredient8
+Section3 --> Ingredient9
+Section3 --> Image2
+Section3 --> Image3
+Recipe1 --> Step1
+Recipe2 --> Step2
+Recipe2 --> Step3
+Recipe3 --> Step4
+Recipe3 --> Step5
+Step1 --> List1
+Step2 --> List1
+Step2 --> List2
+Step3 --> List2
+Step4 --> List2
+Step5 --> List2
+Step1 --> Image1
+Step2 --> Image1
+Step3 --> Image2
+Step4 --> Image3
+Step5 --> Image3
+Section3 --> Link
+Section3 --> Footer
+
+@enduml

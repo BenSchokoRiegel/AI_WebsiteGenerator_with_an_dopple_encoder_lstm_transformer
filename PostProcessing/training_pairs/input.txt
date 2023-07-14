@@ -1,0 +1,109 @@
+@startuml
+
+object Body
+
+object Header
+
+object Logo {
++ href = "https://www.thm.de/site/images/stories/AG_Kommunikation/logo/logo-thm.jpg"
+}
+
+object Navigation
+
+object Main
+
+object Section1
+
+object Section2
+
+object Section3
+
+object CourseTitle {
+- Modellgetriebene Softwareentwicklung in der Praxis
+}
+
+object UniversityName {
+- THM
+}
+
+object Professor {
+- Prof. Dr. Vaupel
+}
+
+object Description {
+- Welcome to the course 'Modellgetriebene Softwareentwicklung in der Praxis' at THM.
+- This course focuses on practical aspects of model-driven software development, including modeling techniques, code generation, and tool usage.
+}
+
+object Syllabus {
+- The course syllabus covers the following topics:
+- Introduction to model-driven development
+- Modeling languages and notations
+- Model transformations and code generation
+- Model-driven architecture
+- Tool support and case studies
+- Practical exercises and projects
+}
+
+object Resources {
+- Course resources include:
+- Lecture slides and materials
+- Reading materials and references
+- Code samples and examples
+- Software tools and development environments
+}
+
+object Link1 {
++ href = "https://moodle.thm.de/course/view.php?id=2439"
++ rel =  "mddp"
+- Visit the Course Page
+}
+
+object Link2 {
++ href = "https://www.thm.de/mni/steffen-vaupel"
++ rel =  "vaupel"
+- Learn More About Prof. Dr. Vaupel
+}
+
+object Footer
+
+'SPLIT
+
+Body : <body>
+Header : <header>
+Main : <main>
+CourseTitle : <h1>
+UniversityName : <h2>
+Professor : <h3>
+Description : <p>
+Syllabus : <p>
+Resources : <p>
+Link1 : <a>
+Link2 : <a>
+Footer : <footer>
+Logo : <img>
+Navigation : <nav>
+Section1 : <section>
+Section2 : <section>
+Section3 : <section>
+
+'SPLIT
+
+Body --> Header
+Header --> Logo
+Header --> Navigation
+Body --> Main
+Main --> Section1
+Main --> Section2
+Main --> Section3
+Section1 --> CourseTitle
+Section1 --> UniversityName
+Section1 --> Professor
+Section2 --> Description
+Section2 --> Syllabus
+Section2 --> Resources
+Section3 --> Link1
+Section3 --> Link2
+Body --> Footer
+
+@enduml
