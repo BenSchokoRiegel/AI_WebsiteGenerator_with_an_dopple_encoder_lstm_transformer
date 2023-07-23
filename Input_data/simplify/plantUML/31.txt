@@ -1,0 +1,25 @@
+@startuml
+
+object Body
+
+object Paragraph1{
+- hier steht text
+}
+
+object Titel{
+- Meine Website
+}
+
+
+'SPLIT
+
+Body : <body>
+Paragraph1 : <p>
+Titel : <h1>
+
+'SPLIT
+
+Body --> Titel
+Body --> Paragraph1
+
+@enduml
